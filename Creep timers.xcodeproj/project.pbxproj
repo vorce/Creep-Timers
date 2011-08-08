@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D30B61313F03EFE0061C936 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D30B61213F03EFE0061C936 /* UIKit.framework */; };
+		5D30B61513F03EFE0061C936 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D30B61413F03EFE0061C936 /* Foundation.framework */; };
+		5D30B61713F03EFE0061C936 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D30B61613F03EFE0061C936 /* CoreGraphics.framework */; };
+		5D30B61D13F03EFE0061C936 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D30B61B13F03EFE0061C936 /* InfoPlist.strings */; };
+		5D30B61F13F03EFE0061C936 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D30B61E13F03EFE0061C936 /* main.m */; };
+		5D30B62313F03EFE0061C936 /* Creep_timersAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D30B62213F03EFE0061C936 /* Creep_timersAppDelegate.m */; };
+		5D30B62613F03EFE0061C936 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D30B62413F03EFE0061C936 /* MainWindow.xib */; };
+		5D30B62913F03EFE0061C936 /* Creep_timersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D30B62813F03EFE0061C936 /* Creep_timersViewController.m */; };
+		5D30B62C13F03EFE0061C936 /* Creep_timersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D30B62A13F03EFE0061C936 /* Creep_timersViewController.xib */; };
+		5D30B63413F03EFE0061C936 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D30B63313F03EFE0061C936 /* SenTestingKit.framework */; };
+		5D30B63513F03EFE0061C936 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D30B61213F03EFE0061C936 /* UIKit.framework */; };
+		5D30B63613F03EFE0061C936 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D30B61413F03EFE0061C936 /* Foundation.framework */; };
+		5D30B63713F03EFE0061C936 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D30B61613F03EFE0061C936 /* CoreGraphics.framework */; };
+		5D30B63F13F03EFE0061C936 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D30B63D13F03EFE0061C936 /* InfoPlist.strings */; };
+		5D30B64113F03EFE0061C936 /* Creep_timersTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 5D30B64013F03EFE0061C936 /* Creep_timersTests.h */; };
+		5D30B64313F03EFE0061C936 /* Creep_timersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D30B64213F03EFE0061C936 /* Creep_timersTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5D30B63813F03EFE0061C936 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D30B60513F03EFD0061C936 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D30B60D13F03EFE0061C936;
+			remoteInfo = "Creep timers";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5D30B60E13F03EFE0061C936 /* Creep timers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Creep timers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D30B61213F03EFE0061C936 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5D30B61413F03EFE0061C936 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5D30B61613F03EFE0061C936 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5D30B61A13F03EFE0061C936 /* Creep timers-Info.plist */ = {isa = PBXFileReference; path = "Creep timers-Info.plist"; sourceTree = "<group>"; };
+		5D30B61C13F03EFE0061C936 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5D30B61E13F03EFE0061C936 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5D30B62013F03EFE0061C936 /* Creep timers-Prefix.pch */ = {isa = PBXFileReference; path = "Creep timers-Prefix.pch"; sourceTree = "<group>"; };
+		5D30B62113F03EFE0061C936 /* Creep_timersAppDelegate.h */ = {isa = PBXFileReference; path = Creep_timersAppDelegate.h; sourceTree = "<group>"; };
+		5D30B62213F03EFE0061C936 /* Creep_timersAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Creep_timersAppDelegate.m; sourceTree = "<group>"; };
+		5D30B62513F03EFE0061C936 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		5D30B62713F03EFE0061C936 /* Creep_timersViewController.h */ = {isa = PBXFileReference; path = Creep_timersViewController.h; sourceTree = "<group>"; };
+		5D30B62813F03EFE0061C936 /* Creep_timersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Creep_timersViewController.m; sourceTree = "<group>"; };
+		5D30B62B13F03EFE0061C936 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Creep_timersViewController.xib; sourceTree = "<group>"; };
+		5D30B63213F03EFE0061C936 /* Creep timersTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Creep timersTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D30B63313F03EFE0061C936 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		5D30B63C13F03EFE0061C936 /* Creep timersTests-Info.plist */ = {isa = PBXFileReference; path = "Creep timersTests-Info.plist"; sourceTree = "<group>"; };
+		5D30B63E13F03EFE0061C936 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5D30B64013F03EFE0061C936 /* Creep_timersTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Creep_timersTests.h; sourceTree = "<group>"; };
+		5D30B64213F03EFE0061C936 /* Creep_timersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Creep_timersTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D30B60B13F03EFE0061C936 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D30B61313F03EFE0061C936 /* UIKit.framework in Frameworks */,
+				5D30B61513F03EFE0061C936 /* Foundation.framework in Frameworks */,
+				5D30B61713F03EFE0061C936 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D30B62E13F03EFE0061C936 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D30B63413F03EFE0061C936 /* SenTestingKit.framework in Frameworks */,
+				5D30B63513F03EFE0061C936 /* UIKit.framework in Frameworks */,
+				5D30B63613F03EFE0061C936 /* Foundation.framework in Frameworks */,
+				5D30B63713F03EFE0061C936 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D30B60313F03EFD0061C936 = {
+			isa = PBXGroup;
+			children = (
+				5D30B61813F03EFE0061C936 /* Creep timers */,
+				5D30B63A13F03EFE0061C936 /* Creep timersTests */,
+				5D30B61113F03EFE0061C936 /* Frameworks */,
+				5D30B60F13F03EFE0061C936 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5D30B60F13F03EFE0061C936 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D30B60E13F03EFE0061C936 /* Creep timers.app */,
+				5D30B63213F03EFE0061C936 /* Creep timersTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D30B61113F03EFE0061C936 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D30B61213F03EFE0061C936 /* UIKit.framework */,
+				5D30B61413F03EFE0061C936 /* Foundation.framework */,
+				5D30B61613F03EFE0061C936 /* CoreGraphics.framework */,
+				5D30B63313F03EFE0061C936 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5D30B61813F03EFE0061C936 /* Creep timers */ = {
+			isa = PBXGroup;
+			children = (
+				5D30B62113F03EFE0061C936 /* Creep_timersAppDelegate.h */,
+				5D30B62213F03EFE0061C936 /* Creep_timersAppDelegate.m */,
+				5D30B62413F03EFE0061C936 /* MainWindow.xib */,
+				5D30B62713F03EFE0061C936 /* Creep_timersViewController.h */,
+				5D30B62813F03EFE0061C936 /* Creep_timersViewController.m */,
+				5D30B62A13F03EFE0061C936 /* Creep_timersViewController.xib */,
+				5D30B61913F03EFE0061C936 /* Supporting Files */,
+			);
+			path = "Creep timers";
+			sourceTree = "<group>";
+		};
+		5D30B61913F03EFE0061C936 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D30B61A13F03EFE0061C936 /* Creep timers-Info.plist */,
+				5D30B61B13F03EFE0061C936 /* InfoPlist.strings */,
+				5D30B61E13F03EFE0061C936 /* main.m */,
+				5D30B62013F03EFE0061C936 /* Creep timers-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5D30B63A13F03EFE0061C936 /* Creep timersTests */ = {
+			isa = PBXGroup;
+			children = (
+				5D30B64013F03EFE0061C936 /* Creep_timersTests.h */,
+				5D30B64213F03EFE0061C936 /* Creep_timersTests.m */,
+				5D30B63B13F03EFE0061C936 /* Supporting Files */,
+			);
+			path = "Creep timersTests";
+			sourceTree = "<group>";
+		};
+		5D30B63B13F03EFE0061C936 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D30B63C13F03EFE0061C936 /* Creep timersTests-Info.plist */,
+				5D30B63D13F03EFE0061C936 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D30B60D13F03EFE0061C936 /* Creep timers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D30B64613F03EFE0061C936 /* Build configuration list for PBXNativeTarget "Creep timers" */;
+			buildPhases = (
+				5D30B60A13F03EFE0061C936 /* Sources */,
+				5D30B60B13F03EFE0061C936 /* Frameworks */,
+				5D30B60C13F03EFE0061C936 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Creep timers";
+			productName = "Creep timers";
+			productReference = 5D30B60E13F03EFE0061C936 /* Creep timers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5D30B63113F03EFE0061C936 /* Creep timersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D30B64913F03EFE0061C936 /* Build configuration list for PBXNativeTarget "Creep timersTests" */;
+			buildPhases = (
+				5D30B62D13F03EFE0061C936 /* Sources */,
+				5D30B62E13F03EFE0061C936 /* Frameworks */,
+				5D30B62F13F03EFE0061C936 /* Resources */,
+				5D30B63013F03EFE0061C936 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D30B63913F03EFE0061C936 /* PBXTargetDependency */,
+			);
+			name = "Creep timersTests";
+			productName = "Creep timersTests";
+			productReference = 5D30B63213F03EFE0061C936 /* Creep timersTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D30B60513F03EFD0061C936 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 5D30B60813F03EFD0061C936 /* Build configuration list for PBXProject "Creep timers" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5D30B60313F03EFD0061C936;
+			productRefGroup = 5D30B60F13F03EFE0061C936 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D30B60D13F03EFE0061C936 /* Creep timers */,
+				5D30B63113F03EFE0061C936 /* Creep timersTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D30B60C13F03EFE0061C936 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D30B61D13F03EFE0061C936 /* InfoPlist.strings in Resources */,
+				5D30B62613F03EFE0061C936 /* MainWindow.xib in Resources */,
+				5D30B62C13F03EFE0061C936 /* Creep_timersViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D30B62F13F03EFE0061C936 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D30B63F13F03EFE0061C936 /* InfoPlist.strings in Resources */,
+				5D30B64113F03EFE0061C936 /* Creep_timersTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5D30B63013F03EFE0061C936 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D30B60A13F03EFE0061C936 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D30B61F13F03EFE0061C936 /* main.m in Sources */,
+				5D30B62313F03EFE0061C936 /* Creep_timersAppDelegate.m in Sources */,
+				5D30B62913F03EFE0061C936 /* Creep_timersViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D30B62D13F03EFE0061C936 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D30B64313F03EFE0061C936 /* Creep_timersTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5D30B63913F03EFE0061C936 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D30B60D13F03EFE0061C936 /* Creep timers */;
+			targetProxy = 5D30B63813F03EFE0061C936 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5D30B61B13F03EFE0061C936 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D30B61C13F03EFE0061C936 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5D30B62413F03EFE0061C936 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D30B62513F03EFE0061C936 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		5D30B62A13F03EFE0061C936 /* Creep_timersViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D30B62B13F03EFE0061C936 /* en */,
+			);
+			name = Creep_timersViewController.xib;
+			sourceTree = "<group>";
+		};
+		5D30B63D13F03EFE0061C936 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D30B63E13F03EFE0061C936 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5D30B64413F03EFE0061C936 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		5D30B64513F03EFE0061C936 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5D30B64713F03EFE0061C936 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Creep timers/Creep timers-Prefix.pch";
+				INFOPLIST_FILE = "Creep timers/Creep timers-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5D30B64813F03EFE0061C936 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Creep timers/Creep timers-Prefix.pch";
+				INFOPLIST_FILE = "Creep timers/Creep timers-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5D30B64A13F03EFE0061C936 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Creep timers.app/Creep timers";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Creep timers/Creep timers-Prefix.pch";
+				INFOPLIST_FILE = "Creep timersTests/Creep timersTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		5D30B64B13F03EFE0061C936 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Creep timers.app/Creep timers";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Creep timers/Creep timers-Prefix.pch";
+				INFOPLIST_FILE = "Creep timersTests/Creep timersTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D30B60813F03EFD0061C936 /* Build configuration list for PBXProject "Creep timers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D30B64413F03EFE0061C936 /* Debug */,
+				5D30B64513F03EFE0061C936 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D30B64613F03EFE0061C936 /* Build configuration list for PBXNativeTarget "Creep timers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D30B64713F03EFE0061C936 /* Debug */,
+				5D30B64813F03EFE0061C936 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5D30B64913F03EFE0061C936 /* Build configuration list for PBXNativeTarget "Creep timersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D30B64A13F03EFE0061C936 /* Debug */,
+				5D30B64B13F03EFE0061C936 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5D30B60513F03EFD0061C936 /* Project object */;
+}

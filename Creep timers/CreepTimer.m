@@ -14,7 +14,7 @@
 {
     self = [super init];
     if (self) {
-        // Initialization code here.
+      // Initialization code here.
       minutes = 9;
       seconds = 0;
       caption = @"";
@@ -106,6 +106,10 @@
 }
 
 - (void)modifyTime:(int)s {
+  if(creepUp == TRUE) {
+    return;
+  }
+  
   seconds += s;
   if(seconds < 0) {
     minutes--;
@@ -121,6 +125,9 @@
       minutes = startMinute;
     }
   }
+  
+  [self caption];
+  [creepButton setTitle:caption forState:UIControlStateNormal];
 }
 
 - (void)setCreepButton:(UIButton *)button {

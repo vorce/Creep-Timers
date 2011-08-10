@@ -10,20 +10,6 @@
 
 @implementation Creep_timersViewController
 
-/*@synthesize baronTimer;
-@synthesize dragonTimer;
-@synthesize blueGolemTimer;
-@synthesize purpleGolemTimer;
-@synthesize blueLizardTimer;
-@synthesize purpleLizardTimer;
-
-@synthesize baronTime;
-@synthesize dragonTime;
-@synthesize blueGolemTime;
-@synthesize purpleGolemTime;
-@synthesize blueLizardTime;
-@synthesize purpleLizardTime;*/
-
 @synthesize baronButton;
 @synthesize dragonButton;
 @synthesize blueGolemButton;
@@ -58,6 +44,30 @@
   [dragon setStartSecond:0];
   [dragon setCreepName:@"Dragon"];
   [dragon setCreepButton:dragonButton];
+  
+  blueGolem = [[CreepTimer alloc] init];
+  [blueGolem setStartMinute:5];
+  [blueGolem setStartSecond:0];
+  [blueGolem setCreepName:@"Golem (Blue team)"];
+  [blueGolem setCreepButton:blueGolemButton];
+  
+  purpleGolem = [[CreepTimer alloc] init];
+  [purpleGolem setStartMinute:5];
+  [purpleGolem setStartSecond:0];
+  [purpleGolem setCreepName:@"Golem (Purple team)"];
+  [purpleGolem setCreepButton:purpleGolemButton];
+  
+  blueLizard = [[CreepTimer alloc] init];
+  [blueLizard setStartMinute:5];
+  [blueLizard setStartSecond:0];
+  [blueLizard setCreepName:@"Lizard (Blue team)"];
+  [blueLizard setCreepButton:blueLizardButton];
+  
+  purpleLizard = [[CreepTimer alloc] init];
+  [purpleLizard setStartMinute:5];
+  [purpleLizard setStartSecond:0];
+  [purpleLizard setCreepName:@"Lizard (Purple team)"];
+  [purpleLizard setCreepButton:purpleLizardButton];
 }
 
 - (void)viewDidUnload
@@ -86,15 +96,19 @@
       break;
       
     case 200: // blue golem
+      [blueGolem toggleCountdown];
       break;
       
     case 300: // purple golem
+      [purpleGolem toggleCountdown];
       break;
       
     case 400: // blue lizard
+      [blueLizard toggleCountdown];
       break;
       
     case 500: // purple lizard
+      [purpleLizard toggleCountdown];
       break;
       
     default:
@@ -123,15 +137,19 @@
       break;
       
     case 215: // blue golem
+      [blueGolem modifyTime:time];
       break;
       
     case 315: // purp golem
+      [purpleGolem modifyTime:time];
       break;
       
     case 415: // blue liz
+      [blueLizard modifyTime:time];
       break;
       
     case 515: // purp liz
+      [purpleLizard modifyTime:time];
       break;
       
     default:
@@ -139,77 +157,13 @@
   }
 }
 
-/*
-- (NSDate*)updateTime:(NSDate*)theDate modifyer:(int)seconds startTime:(NSString*)start {
-  NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
-  [dateFormat setDateFormat:@"m:ss"];
-  NSString *dateStr = @"0:00";
-  NSDate *zeroTime = [dateFormat dateFromString:dateStr];
-  NSDate *newTime = [theDate dateByAddingTimeInterval:seconds];
-  NSDate *startTime = [dateFormat dateFromString:start];
-  
-  NSCalendar *calendar = [NSCalendar currentCalendar];
-  
-  NSDateComponents *newComponents = [calendar components:(kCFCalendarUnitHour | kCFCalendarUnitMinute) fromDate:newTime];
-  NSInteger nm = [newComponents minute];
-  NSInteger ns = [newComponents second];
-  
-  NSDateComponents *startComps = [calendar components:(kCFCalendarUnitHour | kCFCalendarUnitMinute) fromDate:startTime];
-  NSInteger sm = [startComps minute];
-  NSInteger ss = [startComps second];
-  
-  if([newTime compare:startTime] == NSOrderedDescending) { // newTime > startTime
-    newTime = startTime;
-  }
-  
-  return newTime;
-}
-
-- (NSDate*)initTime:(NSString*)timeString {
-  NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
-  [dateFormat setDateFormat:@"m:ss"];
-  
-  NSDate *theCreepTime = [dateFormat dateFromString:timeString];
-  
-  return theCreepTime;
-}
-
-- (void)timerFireMethod:(NSTimer*)theTimer {
-  NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
-  [dateFormat setDateFormat:@"m:ss"];
-  NSString *dateStr = @"0:00";
-  NSDate *zeroTime = [dateFormat dateFromString:dateStr];
-  
-  if(theTimer == self.baronTimer) {
-    self.baronTime = [self.baronTime dateByAddingTimeInterval:(-1)];
- 
-    if([self.baronTime isEqualToDate:zeroTime]) {
-      [self.baronButton setTitle:@"Baron: UP!" forState:UIControlStateNormal];
-      
-      self.baronTime = [self initTime:@"7:00"];
-      [self resetTimer:self.baronTimer];
-    } else {
-      NSString *caption = [NSString stringWithFormat:@"Baron: %@", baronTime];
-      [self.baronButton setTitle:caption forState:UIControlStateNormal];
-    }
-  } else if(theTimer == self.dragonTimer) {
-    dragonTime = [dragonTime dateByAddingTimeInterval:-1];
-    
-    if([dragonTime isEqualToDate:zeroTime]) {
-      dragonTime = [self initTime:@"6:00"];
-      [self resetTimer:dragonTimer];
-    }
-  }
-}
-
-- (void)resetTimer:(NSTimer*)theTimer {
-  [theTimer invalidate];
-  theTimer = nil;
-} */
-
 - (IBAction)resetTimers {
   [baron reset];
   [dragon reset];
+  [blueGolem reset];
+  [purpleGolem reset];
+  [blueLizard reset];
+  [purpleLizard reset];
 }
 
 @end

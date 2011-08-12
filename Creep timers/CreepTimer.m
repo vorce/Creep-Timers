@@ -19,6 +19,7 @@
       seconds = 0;
       caption = @"";
       creepUp = TRUE;
+      secondsWhenWarning = -1;
     }
     
     return self;
@@ -34,6 +35,12 @@
       seconds = 59;
     }
   }
+  
+  if(secondsWhenWarning >= 0 &&
+     secondsWhenWarning == ((minutes*60) + seconds)) {
+    [self playAudioWarning];
+  }
+  
   [self caption];
   [creepButton setTitle:caption forState:UIControlStateNormal];
 }
@@ -126,6 +133,11 @@
     }
   }
   
+  if(secondsWhenWarning >= 0 &&
+     secondsWhenWarning == ((minutes*60) + seconds)) {
+    [self playAudioWarning];
+  }
+  
   [self caption];
   [creepButton setTitle:caption forState:UIControlStateNormal];
 }
@@ -134,4 +146,45 @@
   creepButton = button;
 }
 
+- (void)setSecondsWhenWarning:(int)s {
+  secondsWhenWarning = s;
+}
+
+- (void)playAudioWarning {
+  AudioServicesPlaySystemSound(audioEffect);
+}
+
+- (void)setAudioEffect:(NSString *)soundFile {
+  NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"baron" ofType:@"aiff"];
+  if(soundPath == nil) {
+    NSLog(@"Couldn't load sound");
+    return;
+  }
+  
+  NSLog(@"Sound path: %@", soundPath);
+  
+  //CFURLRef soundFileURLRefClick  = CFBundleCopyResourceURL(CFBundleGetMainBundle(), CFSTR("baron"), CFSTR("aiff"), NULL);
+  /*CFURLRef soundFileURLRefClick = CFURLCreateWithFileSystemPath (
+                                 kCFAllocatorDefault,                 
+                                 CFSTR ("baron.aiff"),    
+                                 kCFURLPOSIXPathStyle,
+                                 FALSE
+                                 );*/
+  OSStatus error = AudioServicesCreateSystemSoundID((CFURLRef)[NSURL fileURLWithPath: soundPath], &audioEffect);
+  if (error != kAudioServicesNoError) {
+    NSLog(@"Error %ld loading sound at path: %@", error, soundPath);
+  }
+  
+  UInt32 doChangeDefaultRoute = 1;        
+  AudioSessionSetProperty(kAudioSessionProperty_OverrideCategoryDefaultToSpeaker,
+                          sizeof(doChangeDefaultRoute), &doChangeDefaultRoute);
+  
+  // AudioServicesCreateSystemSoundID(soundFileURLRefClick, &audioEffect);
+}
+
+
+- (void)dealloc {
+  AudioServicesDisposeSystemSoundID(audioEffect);
+  [super dealloc];
+}
 @end

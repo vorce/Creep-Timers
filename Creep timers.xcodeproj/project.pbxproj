@@ -25,6 +25,13 @@
 		5D30B64313F03EFE0061C936 /* Creep_timersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D30B64213F03EFE0061C936 /* Creep_timersTests.m */; };
 		5DE0CEC213F1AFD3005A7E5D /* CreepTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE0CEC113F1AFD3005A7E5D /* CreepTimer.m */; };
 		5DE0CEC413F316DF005A7E5D /* baronnashor.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DE0CEC313F316DF005A7E5D /* baronnashor.png */; };
+		5DE0CECC13F32362005A7E5D /* dragon.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 5DE0CEC613F32362005A7E5D /* dragon.aiff */; };
+		5DE0CECD13F32362005A7E5D /* golemblue.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 5DE0CEC713F32362005A7E5D /* golemblue.aiff */; };
+		5DE0CECE13F32362005A7E5D /* golempurple.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 5DE0CEC813F32362005A7E5D /* golempurple.aiff */; };
+		5DE0CECF13F32362005A7E5D /* lizardblue.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 5DE0CEC913F32362005A7E5D /* lizardblue.aiff */; };
+		5DE0CED013F32362005A7E5D /* lizardpurple.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 5DE0CECA13F32362005A7E5D /* lizardpurple.aiff */; };
+		5DE0CED213F51194005A7E5D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE0CED113F51194005A7E5D /* AudioToolbox.framework */; };
+		5DE0CED813F52F95005A7E5D /* baron.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 5DE0CEC513F32362005A7E5D /* baron.aiff */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +68,13 @@
 		5DE0CEC013F1AFD3005A7E5D /* CreepTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreepTimer.h; sourceTree = "<group>"; };
 		5DE0CEC113F1AFD3005A7E5D /* CreepTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreepTimer.m; sourceTree = "<group>"; };
 		5DE0CEC313F316DF005A7E5D /* baronnashor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baronnashor.png; sourceTree = "<group>"; };
+		5DE0CEC513F32362005A7E5D /* baron.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = baron.aiff; path = "Creep timers/baron.aiff"; sourceTree = "<group>"; };
+		5DE0CEC613F32362005A7E5D /* dragon.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = dragon.aiff; path = "Creep timers/dragon.aiff"; sourceTree = "<group>"; };
+		5DE0CEC713F32362005A7E5D /* golemblue.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = golemblue.aiff; path = "Creep timers/golemblue.aiff"; sourceTree = "<group>"; };
+		5DE0CEC813F32362005A7E5D /* golempurple.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = golempurple.aiff; path = "Creep timers/golempurple.aiff"; sourceTree = "<group>"; };
+		5DE0CEC913F32362005A7E5D /* lizardblue.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = lizardblue.aiff; path = "Creep timers/lizardblue.aiff"; sourceTree = "<group>"; };
+		5DE0CECA13F32362005A7E5D /* lizardpurple.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = lizardpurple.aiff; path = "Creep timers/lizardpurple.aiff"; sourceTree = "<group>"; };
+		5DE0CED113F51194005A7E5D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DE0CED213F51194005A7E5D /* AudioToolbox.framework in Frameworks */,
 				5D30B61313F03EFE0061C936 /* UIKit.framework in Frameworks */,
 				5D30B61513F03EFE0061C936 /* Foundation.framework in Frameworks */,
 				5D30B61713F03EFE0061C936 /* CoreGraphics.framework in Frameworks */,
@@ -91,6 +106,8 @@
 		5D30B60313F03EFD0061C936 = {
 			isa = PBXGroup;
 			children = (
+				5DE0CED413F5142E005A7E5D /* Sound */,
+				5DE0CED113F51194005A7E5D /* AudioToolbox.framework */,
 				5DE0CEC313F316DF005A7E5D /* baronnashor.png */,
 				5D30B61813F03EFE0061C936 /* Creep timers */,
 				5D30B63A13F03EFE0061C936 /* Creep timersTests */,
@@ -165,6 +182,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5DE0CED413F5142E005A7E5D /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				5DE0CEC513F32362005A7E5D /* baron.aiff */,
+				5DE0CEC613F32362005A7E5D /* dragon.aiff */,
+				5DE0CEC713F32362005A7E5D /* golemblue.aiff */,
+				5DE0CEC813F32362005A7E5D /* golempurple.aiff */,
+				5DE0CEC913F32362005A7E5D /* lizardblue.aiff */,
+				5DE0CECA13F32362005A7E5D /* lizardpurple.aiff */,
+			);
+			name = Sound;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -232,10 +262,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DE0CED813F52F95005A7E5D /* baron.aiff in Resources */,
 				5D30B61D13F03EFE0061C936 /* InfoPlist.strings in Resources */,
 				5D30B62613F03EFE0061C936 /* MainWindow.xib in Resources */,
 				5D30B62C13F03EFE0061C936 /* Creep_timersViewController.xib in Resources */,
 				5DE0CEC413F316DF005A7E5D /* baronnashor.png in Resources */,
+				5DE0CECC13F32362005A7E5D /* dragon.aiff in Resources */,
+				5DE0CECD13F32362005A7E5D /* golemblue.aiff in Resources */,
+				5DE0CECE13F32362005A7E5D /* golempurple.aiff in Resources */,
+				5DE0CECF13F32362005A7E5D /* lizardblue.aiff in Resources */,
+				5DE0CED013F32362005A7E5D /* lizardpurple.aiff in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

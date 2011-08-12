@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AudioToolbox/AudioServices.h>
+#include <AudioToolbox/AudioToolbox.h>
 
 @interface CreepTimer : NSObject {
   NSTimer *creepTimer;
@@ -18,6 +20,8 @@
   NSString *caption;
   Boolean creepUp;
   UIButton *creepButton;
+  int secondsWhenWarning;
+  SystemSoundID audioEffect;
 }
 
 
@@ -33,5 +37,8 @@
 - (Boolean)isCreepUp;
 - (void)reset;
 - (void)setCreepButton:(UIButton *)button;
+- (void)setSecondsWhenWarning:(int)s;
+- (void)playAudioWarning;
+- (void)setAudioEffect:(NSString *)soundFile;
 
 @end

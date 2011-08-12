@@ -38,6 +38,8 @@
   [baron setStartSecond:0];
   [baron setCreepName:@"Baron"];
   [baron setCreepButton:baronButton];
+  [baron setSecondsWhenWarning:30];
+  [baron setAudioEffect:@"baron"];
   
   dragon = [[CreepTimer alloc] init];
   [dragon setStartMinute:6];

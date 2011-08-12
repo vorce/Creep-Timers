@@ -40,7 +40,7 @@
 			</object>
 			<object class="IBUIView" id="766721923">
 				<reference key="NSNextResponder"/>
-				<int key="NSvFlags">274</int>
+				<int key="NSvFlags">306</int>
 				<object class="NSMutableArray" key="NSSubviews">
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<object class="IBUIButton" id="121110507">
@@ -55,7 +55,7 @@
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
-						<object class="NSFont" key="IBUIFont" id="806007614">
+						<object class="NSFont" key="IBUIFont" id="58298756">
 							<string key="NSName">Helvetica-Bold</string>
 							<double key="NSSize">32</double>
 							<int key="NSfFlags">16</int>
@@ -88,7 +88,7 @@
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
-						<reference key="IBUIFont" ref="806007614"/>
+						<reference key="IBUIFont" ref="58298756"/>
 						<int key="IBUIButtonType">1</int>
 						<string key="IBUINormalTitle">Dragon: UP!</string>
 						<reference key="IBUIHighlightedTitleColor" ref="99243515"/>
@@ -111,7 +111,7 @@
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
-						<object class="NSFont" key="IBUIFont" id="555205193">
+						<object class="NSFont" key="IBUIFont" id="638028535">
 							<string key="NSName">Helvetica-Bold</string>
 							<double key="NSSize">24</double>
 							<int key="NSfFlags">16</int>
@@ -138,7 +138,7 @@
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
-						<reference key="IBUIFont" ref="555205193"/>
+						<reference key="IBUIFont" ref="638028535"/>
 						<int key="IBUIButtonType">1</int>
 						<string key="IBUINormalTitle">Golem (Purple team): UP!</string>
 						<reference key="IBUIHighlightedTitleColor" ref="99243515"/>
@@ -161,7 +161,7 @@
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
-						<reference key="IBUIFont" ref="555205193"/>
+						<reference key="IBUIFont" ref="638028535"/>
 						<int key="IBUIButtonType">1</int>
 						<string key="IBUINormalTitle">Lizard (Blue team): UP!</string>
 						<reference key="IBUIHighlightedTitleColor" ref="99243515"/>
@@ -184,7 +184,7 @@
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
-						<reference key="IBUIFont" ref="555205193"/>
+						<reference key="IBUIFont" ref="638028535"/>
 						<int key="IBUIButtonType">1</int>
 						<string key="IBUINormalTitle">Lizard (Purple team): UP!</string>
 						<reference key="IBUIHighlightedTitleColor" ref="99243515"/>
@@ -440,7 +440,7 @@
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
-						<reference key="IBUIFont" ref="806007614"/>
+						<reference key="IBUIFont" ref="58298756"/>
 						<int key="IBUIButtonType">1</int>
 						<string key="IBUINormalTitle">Reset all</string>
 						<reference key="IBUIHighlightedTitleColor" ref="99243515"/>

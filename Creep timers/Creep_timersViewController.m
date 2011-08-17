@@ -46,6 +46,8 @@
   [dragon setStartSecond:0];
   [dragon setCreepName:@"Dragon"];
   [dragon setCreepButton:dragonButton];
+  [dragon setSecondsWhenWarning:30];
+  [dragon setAudioEffect:@"dragon"];
   
   blueGolem = [[CreepTimer alloc] init];
   [blueGolem setStartMinute:5];

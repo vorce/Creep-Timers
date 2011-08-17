@@ -23,6 +23,7 @@
 		5D30B63F13F03EFE0061C936 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D30B63D13F03EFE0061C936 /* InfoPlist.strings */; };
 		5D30B64113F03EFE0061C936 /* Creep_timersTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 5D30B64013F03EFE0061C936 /* Creep_timersTests.h */; };
 		5D30B64313F03EFE0061C936 /* Creep_timersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D30B64213F03EFE0061C936 /* Creep_timersTests.m */; };
+		5DD559A213FC17CC000EA96B /* README in Resources */ = {isa = PBXBuildFile; fileRef = 5DD559A113FC17CC000EA96B /* README */; };
 		5DE0CEC213F1AFD3005A7E5D /* CreepTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE0CEC113F1AFD3005A7E5D /* CreepTimer.m */; };
 		5DE0CEC413F316DF005A7E5D /* baronnashor.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DE0CEC313F316DF005A7E5D /* baronnashor.png */; };
 		5DE0CECC13F32362005A7E5D /* dragon.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 5DE0CEC613F32362005A7E5D /* dragon.aiff */; };
@@ -65,6 +66,7 @@
 		5D30B63E13F03EFE0061C936 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5D30B64013F03EFE0061C936 /* Creep_timersTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Creep_timersTests.h; sourceTree = "<group>"; };
 		5D30B64213F03EFE0061C936 /* Creep_timersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Creep_timersTests.m; sourceTree = "<group>"; };
+		5DD559A113FC17CC000EA96B /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		5DE0CEC013F1AFD3005A7E5D /* CreepTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreepTimer.h; sourceTree = "<group>"; };
 		5DE0CEC113F1AFD3005A7E5D /* CreepTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreepTimer.m; sourceTree = "<group>"; };
 		5DE0CEC313F316DF005A7E5D /* baronnashor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baronnashor.png; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 		5D30B60313F03EFD0061C936 = {
 			isa = PBXGroup;
 			children = (
+				5DD559A113FC17CC000EA96B /* README */,
 				5DE0CED413F5142E005A7E5D /* Sound */,
 				5DE0CED113F51194005A7E5D /* AudioToolbox.framework */,
 				5DE0CEC313F316DF005A7E5D /* baronnashor.png */,
@@ -272,6 +275,7 @@
 				5DE0CECE13F32362005A7E5D /* golempurple.aiff in Resources */,
 				5DE0CECF13F32362005A7E5D /* lizardblue.aiff in Resources */,
 				5DE0CED013F32362005A7E5D /* lizardpurple.aiff in Resources */,
+				5DD559A213FC17CC000EA96B /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

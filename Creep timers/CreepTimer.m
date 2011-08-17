@@ -117,6 +117,8 @@
     return;
   }
   
+  int totalSecondsBeforeMod = ((minutes*60) + seconds);
+  
   seconds += s;
   if(seconds < 0) {
     minutes--;
@@ -133,8 +135,18 @@
     }
   }
   
+  int totalSecondsNow = ((minutes*60) + seconds);
+  
+  if(totalSecondsNow > ((startMinute*60) + startSecond)) {
+    seconds = startSecond;
+    minutes = startMinute;
+    return;
+  }
+  
   if(secondsWhenWarning >= 0 &&
-     secondsWhenWarning == ((minutes*60) + seconds)) {
+     (secondsWhenWarning == totalSecondsNow ||
+      (totalSecondsBeforeMod > totalSecondsNow
+       && totalSecondsNow <= secondsWhenWarning))) {
     [self playAudioWarning];
   }
   
@@ -155,13 +167,13 @@
 }
 
 - (void)setAudioEffect:(NSString *)soundFile {
-  NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"baron" ofType:@"aiff"];
+  NSString *soundPath = [[NSBundle mainBundle] pathForResource:soundFile ofType:@"aiff"];
   if(soundPath == nil) {
     NSLog(@"Couldn't load sound");
     return;
   }
   
-  NSLog(@"Sound path: %@", soundPath);
+  // NSLog(@"Sound path: %@", soundPath);
   
   //CFURLRef soundFileURLRefClick  = CFBundleCopyResourceURL(CFBundleGetMainBundle(), CFSTR("baron"), CFSTR("aiff"), NULL);
   /*CFURLRef soundFileURLRefClick = CFURLCreateWithFileSystemPath (
@@ -175,9 +187,9 @@
     NSLog(@"Error %ld loading sound at path: %@", error, soundPath);
   }
   
-  UInt32 doChangeDefaultRoute = 1;        
+  /*UInt32 doChangeDefaultRoute = 1;        
   AudioSessionSetProperty(kAudioSessionProperty_OverrideCategoryDefaultToSpeaker,
-                          sizeof(doChangeDefaultRoute), &doChangeDefaultRoute);
+                          sizeof(doChangeDefaultRoute), &doChangeDefaultRoute);*/
   
   // AudioServicesCreateSystemSoundID(soundFileURLRefClick, &audioEffect);
 }

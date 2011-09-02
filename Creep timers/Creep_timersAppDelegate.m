@@ -3,7 +3,7 @@
 //  Creep timers
 //
 //  Created by Joel Carlbark on 2011-08-08.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Copyright 2011 Joel Carlbark. All rights reserved.
 //
 
 #import "Creep_timersAppDelegate.h"
@@ -52,6 +52,7 @@
     /*
      Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
      */
+  [self.viewController resetTimers]; // instead of coming back to non-accurate timers
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application

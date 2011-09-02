@@ -3,7 +3,7 @@
 //  Creep timers
 //
 //  Created by Joel Carlbark on 2011-08-09.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Copyright 2011 Joel Carlbark. All rights reserved.
 //
 
 #import "CreepTimer.h"

@@ -13,6 +13,7 @@
 - (void)dealloc {
   AudioServicesDisposeSystemSoundID(audioEffect);
   [caption release];
+  [creepTimer release];
   [super dealloc];
 }
 

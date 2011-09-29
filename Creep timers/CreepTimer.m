@@ -10,6 +10,12 @@
 
 @implementation CreepTimer
 
+- (void)dealloc {
+  AudioServicesDisposeSystemSoundID(audioEffect);
+  [caption release];
+  [super dealloc];
+}
+
 - (id)init
 {
     self = [super init];
@@ -172,31 +178,11 @@
     NSLog(@"Couldn't load sound");
     return;
   }
-  
-  // NSLog(@"Sound path: %@", soundPath);
-  
-  //CFURLRef soundFileURLRefClick  = CFBundleCopyResourceURL(CFBundleGetMainBundle(), CFSTR("baron"), CFSTR("aiff"), NULL);
-  /*CFURLRef soundFileURLRefClick = CFURLCreateWithFileSystemPath (
-                                 kCFAllocatorDefault,                 
-                                 CFSTR ("baron.aiff"),    
-                                 kCFURLPOSIXPathStyle,
-                                 FALSE
-                                 );*/
+
   OSStatus error = AudioServicesCreateSystemSoundID((CFURLRef)[NSURL fileURLWithPath: soundPath], &audioEffect);
   if (error != kAudioServicesNoError) {
     NSLog(@"Error %ld loading sound at path: %@", error, soundPath);
   }
-  
-  /*UInt32 doChangeDefaultRoute = 1;        
-  AudioSessionSetProperty(kAudioSessionProperty_OverrideCategoryDefaultToSpeaker,
-                          sizeof(doChangeDefaultRoute), &doChangeDefaultRoute);*/
-  
-  // AudioServicesCreateSystemSoundID(soundFileURLRefClick, &audioEffect);
 }
 
-
-- (void)dealloc {
-  AudioServicesDisposeSystemSoundID(audioEffect);
-  [super dealloc];
-}
 @end

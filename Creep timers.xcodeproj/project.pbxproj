@@ -424,6 +424,7 @@
 				GCC_PREFIX_HEADER = "Creep timers/Creep timers-Prefix.pch";
 				INFOPLIST_FILE = "Creep timers/Creep timers-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
@@ -436,6 +437,7 @@
 				GCC_PREFIX_HEADER = "Creep timers/Creep timers-Prefix.pch";
 				INFOPLIST_FILE = "Creep timers/Creep timers-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
